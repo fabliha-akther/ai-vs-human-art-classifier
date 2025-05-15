@@ -1,67 +1,96 @@
-# AI vs Human Art Classifier 🎨🤖
+# 🎨 AI vs Human Art Classifier
 
-This project uses machine learning to distinguish between **AI-generated art** and **human-made art**. It includes three models: **K-Nearest Neighbors (KNN)**, **Random Forest**, and a **custom Support Vector Machine (SVM)**, trained on image datasets sourced from Kaggle.
+In a world where AI is becoming part of everyday creativity, this project looks at the small but important differences between art made by humans and art made by machines. Using a simple classifier, I want to show how technology can help us see the value in both types of art, while also reminding us of the special touch that makes human creativity unique. For this, I built three basic machine learning models — K-Nearest Neighbors (KNN), Random Forest, and a hand-coded Support Vector Machine (SVM). The goal is to train machines to tell the difference between human and AI art, something even people sometimes find hard to do.
 
 ---
 
-## 📁 Project Structure
+## 🧠 Project Overview
+
+- ✅ Built in **Python 3.13** using **NumPy**, **Pillow**, **Matplotlib**, and **scikit-learn**
+- ✅ Implements 3 classifiers:
+  - **Custom K-Nearest Neighbors (KNN)** (from scratch)
+  - **Random Forest** (using `DecisionTreeClassifier` from scikit-learn)
+  - **Custom linear Support Vector Machine (SVM)** (from scratch)
+- ✅ Includes visualizations:
+  - **Accuracy**, **Precision**, **Recall**
+  - **Confusion Matrices**
+- ✅ Dataset sourced from [Kaggle](https://www.kaggle.com/datasets/kausthubkannan/ai-and-human-art-classification)
+- ✅ Lightweight, well-structured, and beginner-friendly
+
+
+---
+
+## 🗂️ Project Structure
 
 ```
 ai-vs-human-art-classifier/
-├── data/
-│   ├── ai_art/        # AI-generated images (from Kaggle)
-│   ├── human_art/     # Human-created images (from Kaggle)
-│   └── test/          # Images for prediction
-├── src/
-│   ├── preprocessing.py      # Data loading and normalization
-│   ├── model_knn.py          # Custom KNN implementation
-│   ├── model_rf.py           # Random Forest (sklearn-based)
-│   ├── model_svm.py          # Custom linear SVM from scratch
-│   ├── predict.py            # Test prediction on random image
-│   └── visualize.py          # Accuracy, precision, recall plots
+├── data/                     # not pushed to GitHub (see below)
+│   ├── ai_art/               # AI-generated art
+│   ├── human_art/            # Human-created art
+│   └── test/                 # Optional test samples
+├── results/                  # Visualization outputs
+│   ├── accuracy.png
+│   ├── precision_recall.png
+│   └── confusion_matrices.png
+├── src/                      # All Python source code
+│   ├── preprocessing.py
+│   ├── model_knn.py
+│   ├── model_rf.py
+│   ├── model_svm.py
+│   ├── predict.py
+│   └── visualize.py
 ├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
 
-> ⚠️ `data/` is excluded from Git tracking via `.gitignore`. You must manually add it after cloning.
-
 ---
 
-## 📦 Dataset
+## 🖼️ Dataset
 
-- **Source**: [Kaggle](https://www.kaggle.com/)  
-  (You must download your dataset manually. Link depends on which dataset you used.)
+- 🔗 [Kaggle Dataset: AI and Human Art Classification](https://www.kaggle.com/datasets/kausthubkannan/ai-and-human-art-classification)
+- Contains images from both **AI tools** and **human artists**
+- Pre-labeled into folders: `AI_Art` and `Human_Art`
 
-### Folder Setup:
-Place images like this:
+### 📁 How to Set Up the Data
+
+After downloading:
 
 ```
 data/
-├── ai_art/       # e.g., 1000 AI-generated images
-├── human_art/    # e.g., 1000 human artworks
-└── test/         # optional: any image for live testing
+├── ai_art/         → from AI_Art folder
+├── human_art/      → from Human_Art folder
+└── test/           → (Optional) any custom image to test
 ```
+
+> ❗ The entire `data/` folder is **excluded** from GitHub using `.gitignore` to keep the repo lightweight. You'll need to add it manually before running the code.
 
 ---
 
-## 🚀 Running the Project
+## ⚙️ How to Run the Project
 
-### 1. Install Dependencies
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/ai-vs-human-art-classifier.git
+cd ai-vs-human-art-classifier
+```
+
+### 2. Set Up the Environment
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+source .venv/bin/activate    # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2. Preprocess Dataset
+### 3. Preprocess the Images
 
 ```bash
 python src/preprocessing.py
 ```
 
-### 3. Train Models
+### 4. Train Each Model
 
 ```bash
 python src/model_knn.py
@@ -69,13 +98,38 @@ python src/model_rf.py
 python src/model_svm.py
 ```
 
-### 4. Run Prediction on Random Test Image
+### 5. Predict a Random Test Image
 
 ```bash
 python src/predict.py
 ```
 
-Output:
+### 6. Visualize Model Performance
+
+```bash
+python src/visualize.py
+```
+
+---
+
+## 📊 Visual Outputs
+
+### Model Accuracy
+
+![Accuracy Chart](results/accuracy.png)
+
+### Precision & Recall
+
+![Precision and Recall](results/precision_recall.png)
+
+### Confusion Matrices
+
+![Confusion Matrices](results/confusion_matrices.png)
+
+---
+
+## 🧪 Sample Output
+
 ```
 Selected test image: data/test/sample.jpg
 
@@ -84,51 +138,38 @@ Random Forest Prediction  : AI Art     | Accuracy: 78.25%
 SVM Prediction            : AI Art     | Accuracy: 78.00%
 ```
 
-### 5. Visualize Performance
+---
 
-```bash
-python src/visualize.py
-```
+## 📦 Dependencies
 
-This shows:
-- Accuracy bar chart
-- Precision & recall bars
-- Confusion matrices
+Listed in `requirements.txt` (see next file). Major libraries include:
+- numpy
+- Pillow (PIL)
+- matplotlib
+- scikit-learn
 
 ---
 
-## 🛠 Requirements
+## 💡 Notes
 
-Installed via:
-```bash
-pip install -r requirements.txt
-```
-
-Main libraries:
-- `numpy`
-- `Pillow`
-- `matplotlib`
-- `scikit-learn`
+- Images resized to **64×64 pixels**, RGB
+- Each model trained on max **1000 samples per class**
+- Binary labels: `0 = Human`, `1 = AI`
+- All metrics calculated manually or using `sklearn`
+- Graphs saved in `results/` and linked to this README
 
 ---
 
-## 📌 Notes
+## 🙌 Credits
 
-- Images are resized to **64x64 RGB**.
-- Labels: `0 = Human`, `1 = AI`.
-- SVM and KNN are implemented from scratch.
-- Dataset size is limited to 1000 per class (adjustable in code).
-- `data/` is not included in this repo due to size constraints.
+- **Dataset** by [Kausthub Kannan on Kaggle](https://www.kaggle.com/datasets/kausthubkannan/ai-and-human-art-classification)
+
 
 ---
 
-## 🙏 Credits
+## 📘 License
 
-- Dataset: Kaggle contributors  
-- Code written in Python 3.13 using PyCharm
+This repository is open for **academic** and **educational** purposes.  
+Dataset copyright remains with the original creators.
 
 ---
-
-## 🔗 License
-
-This project is free for academic use. All image rights remain with the original dataset creators.
