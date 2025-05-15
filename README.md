@@ -116,15 +116,16 @@ python src/visualize.py
 
 ### Model Accuracy
 
-![Accuracy Chart](results/accuracy.png)
+![Accuracy](accuracy.png)
 
 ### Precision & Recall
 
-![Precision and Recall](results/precision_recall.png)
+![Precision and Recall](precision_recall.png)
 
 ### Confusion Matrices
 
-![Confusion Matrices](results/confusion_matrices.png)
+![Confusion Matrices](confusion_matrices.png)
+
 
 ---
 
