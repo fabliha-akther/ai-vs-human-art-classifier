@@ -4,7 +4,7 @@ In a world where AI is becoming part of everyday creativity, this project looks 
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 - ✅ Built in **Python 3.13** using **NumPy**, **Pillow**, **Matplotlib**, and **scikit-learn**
 - ✅ Implements 3 classifiers:
@@ -124,7 +124,7 @@ python src/visualize.py
 
 ---
 
-## 🧪 Sample Output
+## Sample Output
 
 ```
 Selected test image: data/test/sample.jpg
@@ -136,7 +136,7 @@ SVM Prediction            : AI Art     | Accuracy: 78.00%
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 Listed in `requirements.txt` (see next file). Major libraries include:
 - numpy
@@ -156,14 +156,14 @@ Listed in `requirements.txt` (see next file). Major libraries include:
 
 ---
 
-## 🙌 Credits
+## Credits
 
 - **Dataset** by [Kausthub Kannan on Kaggle](https://www.kaggle.com/datasets/kausthubkannan/ai-and-human-art-classification)
 
 
 ---
 
-## 📘 License
+## License
 
 This repository is open for **academic** and **educational** purposes.  
 Dataset copyright remains with the original creators.
