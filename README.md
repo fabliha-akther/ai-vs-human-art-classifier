@@ -1,10 +1,10 @@
 # 🎨 AI vs Human Art Classifier
 
-In a world where AI is becoming part of everyday creativity, this project looks at the small but important differences between art made by humans and art made by machines. Using a simple classifier, I want to show how technology can help us see the value in both types of art, while also reminding us of the special touch that makes human creativity unique. For this, I built three basic machine learning models — K-Nearest Neighbors (KNN), Random Forest, and a hand-coded Support Vector Machine (SVM). The goal is to train machines to tell the difference between human and AI art, something even people sometimes find hard to do.
+In a world where AI is becoming part of everyday creativity, this project looks at the small but important differences between art made by humans and art made by machines. Using a simple classifier, I want to show how technology can help us see the value in both types of art, while also reminding us of the special touch that makes human creativity unique. For this, I built three basic machine learning models: K-Nearest Neighbors (KNN), Random Forest, and a hand-coded Support Vector Machine (SVM). The goal is to train machines to tell the difference between human and AI art, something even people sometimes find hard to do.
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 - ✅ Built in **Python 3.13** using **NumPy**, **Pillow**, **Matplotlib**, and **scikit-learn**
 - ✅ Implements 3 classifiers:
@@ -114,21 +114,17 @@ python src/visualize.py
 
 ## 📊 Visual Outputs
 
-### Model Accuracy
+<div align="center">
+  <img src="accuracy.png" alt="Accuracy" width="30%" style="margin-right: 10px;"/>
+  <img src="precision_recall.png" alt="Precision and Recall" width="30%" style="margin-right: 10px;"/>
+  <img src="confusion_matrices.png" alt="Confusion Matrices" width="30%"/>
+</div>
 
-![Accuracy Chart](results/accuracy.png)
 
-### Precision & Recall
-
-![Precision and Recall](results/precision_recall.png)
-
-### Confusion Matrices
-
-![Confusion Matrices](results/confusion_matrices.png)
 
 ---
 
-## 🧪 Sample Output
+## Sample Output
 
 ```
 Selected test image: data/test/sample.jpg
@@ -140,7 +136,7 @@ SVM Prediction            : AI Art     | Accuracy: 78.00%
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 Listed in `requirements.txt` (see next file). Major libraries include:
 - numpy
@@ -160,14 +156,14 @@ Listed in `requirements.txt` (see next file). Major libraries include:
 
 ---
 
-## 🙌 Credits
+## Credits
 
 - **Dataset** by [Kausthub Kannan on Kaggle](https://www.kaggle.com/datasets/kausthubkannan/ai-and-human-art-classification)
 
 
 ---
 
-## 📘 License
+## License
 
 This repository is open for **academic** and **educational** purposes.  
 Dataset copyright remains with the original creators.
