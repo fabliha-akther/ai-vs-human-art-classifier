@@ -1,6 +1,6 @@
 # 🎨 AI vs Human Art Classifier
 
-In a world where AI is becoming part of everyday creativity, this project looks at the small but important differences between art made by humans and art made by machines. Using a simple classifier, I want to show how technology can help us see the value in both types of art, while also reminding us of the special touch that makes human creativity unique. For this, I built three basic machine learning models — K-Nearest Neighbors (KNN), Random Forest, and a hand-coded Support Vector Machine (SVM). The goal is to train machines to tell the difference between human and AI art, something even people sometimes find hard to do.
+In a world where AI is becoming part of everyday creativity, this project looks at the small but important differences between art made by humans and art made by machines. Using a simple classifier, I want to show how technology can help us see the value in both types of art, while also reminding us of the special touch that makes human creativity unique. For this, I built three basic machine learning models: K-Nearest Neighbors (KNN), Random Forest, and a hand-coded Support Vector Machine (SVM). The goal is to train machines to tell the difference between human and AI art, something even people sometimes find hard to do.
 
 ---
 
