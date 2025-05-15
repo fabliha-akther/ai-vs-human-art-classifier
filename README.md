@@ -114,17 +114,12 @@ python src/visualize.py
 
 ## 📊 Visual Outputs
 
-### Model Accuracy
+<div align="center">
+  <img src="accuracy.png" alt="Accuracy" width="30%" style="margin-right: 10px;"/>
+  <img src="precision_recall.png" alt="Precision and Recall" width="30%" style="margin-right: 10px;"/>
+  <img src="confusion_matrices.png" alt="Confusion Matrices" width="30%"/>
+</div>
 
-![Accuracy](accuracy.png)
-
-### Precision & Recall
-
-![Precision and Recall](precision_recall.png)
-
-### Confusion Matrices
-
-![Confusion Matrices](confusion_matrices.png)
 
 
 ---
