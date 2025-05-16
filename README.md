@@ -114,11 +114,11 @@ python src/visualize.py
 
 <h2>📊 Visual Outputs</h2>
 
-<p align="center" style="display: flex; justify-content: center; gap: 10px;">
+<div style="display: flex; justify-content: center; gap: 10px;">
   <img src="results/accuracy.png" alt="Accuracy" width="300" height="200"/>
   <img src="results/precision_recall.png" alt="Precision and Recall" width="300" height="200"/>
   <img src="results/confusion_matrices.png" alt="Confusion Matrices" width="300" height="200"/>
-</p>
+</div>
 
 
 
