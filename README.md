@@ -4,29 +4,23 @@ In a world where AI is becoming part of everyday creativity, this project looks 
 
 ---
 
-## Project Overview
 
 
 ## Project Overview
 
 - ✅ Built in **Python 3.13** using **NumPy**, **Pillow**, **Matplotlib**, and **scikit-learn**
 - ✅ Implements 3 classifiers:
--  Built in **Python 3.13** using **NumPy**, **Pillow**, **Matplotlib**, and **scikit-learn**
--  Implements 3 classifiers:
-- **Custom K-Nearest Neighbors (KNN)** (from scratch)
-- **Random Forest** (using `DecisionTreeClassifier` from scikit-learn)
-- **Custom linear Support Vector Machine (SVM)** (from scratch)
+  - **Custom K-Nearest Neighbors (KNN)** (from scratch)
+  - **Random Forest** (using `DecisionTreeClassifier` from scikit-learn)
+  - **Custom linear Support Vector Machine (SVM)** (from scratch)
 - ✅ Includes visualizations:
--  Includes visualizations:
-- **Accuracy**, **Precision**, **Recall**
-- **Confusion Matrices**
+  - **Accuracy**, **Precision**, **Recall**
+  - **Confusion Matrices**
 - ✅ Dataset sourced from [Kaggle](https://www.kaggle.com/datasets/kausthubkannan/ai-and-human-art-classification)
 - ✅ Lightweight, well-structured, and beginner-friendly
--  Dataset sourced from [Kaggle](https://www.kaggle.com/datasets/kausthubkannan/ai-and-human-art-classification)
--  Lightweight, well-structured, and beginner-friendly
 
 
----
+
 
 ---
 
