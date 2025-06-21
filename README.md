@@ -69,50 +69,6 @@ data/
 
 > ❗ The entire `data/` folder is **excluded** from GitHub using `.gitignore` to keep the repo lightweight. You'll need to add it manually before running the code.
 
----
-
-## ⚙️ How to Run the Project
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/ai-vs-human-art-classifier.git
-cd ai-vs-human-art-classifier
-```
-
-### 2. Set Up the Environment
-
-```bash
-python -m venv .venv
-source .venv/bin/activate    # On Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 3. Preprocess the Images
-
-```bash
-python src/preprocessing.py
-```
-
-### 4. Train Each Model
-
-```bash
-python src/model_knn.py
-python src/model_rf.py
-python src/model_svm.py
-```
-
-### 5. Predict a Random Test Image
-
-```bash
-python src/predict.py
-```
-
-### 6. Visualize Model Performance
-
-```bash
-python src/visualize.py
-```
 
 ---
 
